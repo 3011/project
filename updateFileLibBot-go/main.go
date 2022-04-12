@@ -30,7 +30,7 @@ func downloadFile() {
 }
 
 func getPid() string {
-	f, err := os.Open("test.txt")
+	f, err := os.Open("FileLibBot.pid.txt")
 	if err != nil {
 		return ""
 	}
@@ -43,7 +43,7 @@ func getPid() string {
 }
 
 func writePid(pid int) {
-	f, _ := os.OpenFile("test.txt", os.O_WRONLY|os.O_CREATE, 0666)
+	f, _ := os.OpenFile("FileLibBot.pid.txt", os.O_WRONLY|os.O_CREATE, 0600)
 	defer f.Close()
 	f.WriteString(strconv.Itoa(pid))
 }
