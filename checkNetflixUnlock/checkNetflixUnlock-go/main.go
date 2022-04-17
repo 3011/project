@@ -19,9 +19,11 @@ var config = struct {
 	RestartWarpCommand []string `required:"true"`
 }{}
 
-func check() bool {
-	client := &http.Client{}
+var client = &http.Client{
+	Timeout: 5 * time.Second,
+}
 
+func check() bool {
 	req, err := http.NewRequest("GET", "https://www.netflix.com/title/81215567", nil)
 	if err != nil {
 		return false
@@ -38,8 +40,6 @@ func check() bool {
 }
 
 func getIP() string {
-	client := &http.Client{}
-
 	req, err := http.NewRequest("GET", "http://ipinfo.io/ip", nil)
 
 	if err != nil {
@@ -63,9 +63,6 @@ func getIP() string {
 }
 
 func sendMsg(text string) {
-	client := &http.Client{
-		Timeout: 20 * time.Second,
-	}
 
 	jsonData := map[string]string{"chat_id": config.ChatID, "text": text}
 	jsonBytes, _ := json.Marshal(jsonData)
@@ -100,7 +97,7 @@ func main() {
 			log.Println("no")
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
 			log.Println("1")
-			cmd.Start()
+			cmd.Run()
 
 			log.Println("here")
 
