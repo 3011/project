@@ -98,7 +98,7 @@ func main() {
 		} else {
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
 			cmd.Env = os.Environ()
-			cmd.Run()
+			cmd.Start()
 
 			log.Panicln("here")
 
