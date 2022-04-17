@@ -66,13 +66,15 @@ func sendMsg(text string) {
 	client := &http.Client{}
 
 	jsonData := map[string]string{"chat_id": config.ChatID, "text": text}
-	jsonByts, _ := json.Marshal(jsonData)
-	req, err := http.NewRequest("POST", "https://api.telegram.org/"+config.BotToken+"/sendMessage", bytes.NewBuffer(jsonByts))
+	jsonBytes, _ := json.Marshal(jsonData)
+
+	req, err := http.NewRequest("POST", "https://api.telegram.org/"+config.BotToken+"/sendMessage", bytes.NewBuffer(jsonBytes))
 	if err != nil {
 		return
 	}
 
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
+	req.Header.Set("Content-Type", "application/json")
 
 	_, err = client.Do(req)
 	if err != nil {
