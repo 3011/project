@@ -92,7 +92,7 @@ func main() {
 	}
 	sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 
-	for true {
+	for {
 		if check() {
 			time.Sleep(30 * time.Minute)
 		} else {
