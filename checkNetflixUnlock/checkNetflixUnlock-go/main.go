@@ -64,7 +64,9 @@ func getIP() string {
 }
 
 func sendMsg(text string) {
-	client := &http.Client{}
+	client := &http.Client{
+		Timeout: 20 * time.Second,
+	}
 
 	jsonData := map[string]string{"chat_id": config.ChatID, "text": text}
 	jsonBytes, _ := json.Marshal(jsonData)
@@ -97,8 +99,6 @@ func main() {
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
 			cmd.Env = os.Environ()
 			cmd.Run()
-
-			time.Sleep(10 * time.Second)
 
 			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
