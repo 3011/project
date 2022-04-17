@@ -100,6 +100,8 @@ func main() {
 			cmd.Env = os.Environ()
 			cmd.Run()
 
+			log.Panicln("here")
+
 			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
