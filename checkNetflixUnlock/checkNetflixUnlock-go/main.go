@@ -70,7 +70,7 @@ func sendMsg(text string) {
 
 	req, err := http.NewRequest("POST", "https://api.telegram.org/"+config.BotToken+"/sendMessage", bytes.NewBuffer(jsonBytes))
 	if err != nil {
-		return
+		log.Panicln(err.Error)
 	}
 
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
@@ -78,7 +78,7 @@ func sendMsg(text string) {
 
 	_, err = client.Do(req)
 	if err != nil {
-		return
+		log.Panicln(err.Error)
 	}
 }
 
