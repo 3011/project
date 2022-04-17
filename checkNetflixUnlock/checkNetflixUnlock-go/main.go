@@ -14,9 +14,9 @@ import (
 )
 
 var config = struct {
-	BotToken           string `required:"true"`
-	ChatID             string `required:"true"`
-	RestartWarpCommand string `required:"true"`
+	BotToken           string   `required:"true"`
+	ChatID             string   `required:"true"`
+	RestartWarpCommand []string `required:"true"`
 }{}
 
 func check() bool {
@@ -81,7 +81,7 @@ func sendMsg(text string) {
 }
 
 func main() {
-	err := configor.Load(&config, "./config.yml")
+	err := configor.Load(&config, "config.yml")
 	if err != nil {
 		log.Panic(err.Error())
 	}
@@ -90,7 +90,7 @@ func main() {
 		if check() {
 			time.Sleep(30 * time.Minute)
 		} else {
-			exec.Command(config.RestartWarpCommand).Start()
+			exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...).Start()
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
