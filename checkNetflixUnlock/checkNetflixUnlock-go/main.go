@@ -81,7 +81,7 @@ func sendMsg(text string) {
 }
 
 func main() {
-	err := configor.Load(&config, "config.yml")
+	err := configor.Load(&config, "./config.yml")
 	if err != nil {
 		log.Panic(err.Error())
 	}
