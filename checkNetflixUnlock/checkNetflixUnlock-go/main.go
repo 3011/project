@@ -88,6 +88,7 @@ func main() {
 	if err != nil {
 		log.Panic(err.Error())
 	}
+	sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 
 	for true {
 		if check() {
@@ -95,8 +96,8 @@ func main() {
 		} else {
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
 			cmd.Env = os.Environ()
-			cmd.Start()
-			cmd.Wait()
+			cmd.Run()
+
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
