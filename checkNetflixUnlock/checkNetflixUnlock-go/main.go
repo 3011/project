@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"os/exec"
 	"strconv"
 	"time"
@@ -93,8 +94,8 @@ func main() {
 			time.Sleep(30 * time.Minute)
 		} else {
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
+			cmd.Env = os.Environ()
 			cmd.Start()
-			cmd.Wait()
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
