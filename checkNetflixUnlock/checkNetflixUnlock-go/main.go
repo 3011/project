@@ -24,42 +24,44 @@ var client = &http.Client{
 }
 
 func check() bool {
-	req, err := http.NewRequest("GET", "https://www.netflix.com/title/81215567", nil)
-	if err != nil {
-		return false
+	for {
+		req, err := http.NewRequest("GET", "https://www.netflix.com/title/81215567", nil)
+		if err != nil {
+			continue
+		}
+
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
+
+		resp, err := client.Do(req)
+		if err != nil {
+			continue
+		}
+		return resp.StatusCode == 200
 	}
-
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return false
-	}
-
-	return resp.StatusCode == 200
 }
 
 func getIP() string {
-	req, err := http.NewRequest("GET", "http://ipinfo.io/ip", nil)
+	for {
+		req, err := http.NewRequest("GET", "http://ipinfo.io/ip", nil)
 
-	if err != nil {
-		return "Error"
+		if err != nil {
+			continue
+		}
+
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
+
+		resp, err := client.Do(req)
+		if err != nil {
+			continue
+		}
+
+		defer resp.Body.Close()
+		body, err := ioutil.ReadAll(resp.Body)
+		if err != nil {
+			continue
+		}
+		return string(body)
 	}
-
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
-
-	resp, err := client.Do(req)
-	if err != nil {
-		return "Error"
-	}
-
-	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return "Error"
-	}
-
-	return string(body)
 }
 
 func sendMsg(text string) {
@@ -67,17 +69,19 @@ func sendMsg(text string) {
 	jsonData := map[string]string{"chat_id": config.ChatID, "text": text}
 	jsonBytes, _ := json.Marshal(jsonData)
 
-	req, err := http.NewRequest("POST", "https://api.telegram.org/"+config.BotToken+"/sendMessage", bytes.NewBuffer(jsonBytes))
-	if err != nil {
-		log.Panicln(err.Error)
-	}
+	for {
+		req, err := http.NewRequest("POST", "https://api.telegram.org/"+config.BotToken+"/sendMessage", bytes.NewBuffer(jsonBytes))
+		if err != nil {
+			continue
+		}
 
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
-	req.Header.Set("Content-Type", "application/json")
+		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44")
+		req.Header.Set("Content-Type", "application/json")
 
-	_, err = client.Do(req)
-	if err != nil {
-		log.Panicln(err.Error)
+		_, err = client.Do(req)
+		if err != nil {
+			continue
+		}
 	}
 }
 
@@ -96,12 +100,10 @@ func main() {
 		} else {
 			log.Println("no")
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
-			log.Println("1")
+			log.Println(1)
 			cmd.Run()
 
-			for getIP() == "Error" {
-			}
-
+			log.Println(2)
 			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 			log.Println("end")
 		}
