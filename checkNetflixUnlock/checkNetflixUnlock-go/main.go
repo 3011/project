@@ -82,7 +82,7 @@ func sendMsg(text string) {
 		if err != nil {
 			continue
 		}
-		return
+		break
 	}
 }
 
