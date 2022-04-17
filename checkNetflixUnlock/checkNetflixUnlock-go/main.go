@@ -98,9 +98,9 @@ func main() {
 			cmd.Env = os.Environ()
 			cmd.Run()
 
-			log.Println("here")
+			time.Sleep(10 * time.Second)
 
-			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
+			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
 }
