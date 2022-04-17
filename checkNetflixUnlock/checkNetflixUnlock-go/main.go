@@ -96,7 +96,7 @@ func main() {
 		} else {
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
 			cmd.Env = os.Environ()
-			cmd.Start()
+			cmd.Run()
 
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
