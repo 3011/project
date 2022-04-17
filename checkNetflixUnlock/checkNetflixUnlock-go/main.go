@@ -92,15 +92,20 @@ func main() {
 	sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 
 	for {
+		log.Println("for")
 		if check() {
+			log.Println("yes")
 			time.Sleep(30 * time.Minute)
 		} else {
+			log.Println("no")
 			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
+			log.Println("1")
 			cmd.Start()
 
 			log.Println("here")
 
 			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
+			log.Println("end")
 		}
 	}
 }
