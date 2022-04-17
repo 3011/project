@@ -14,8 +14,9 @@ import (
 )
 
 var config = struct {
-	BotToken string `required:"true"`
-	ChatID   string `required:"true"`
+	BotToken           string `required:"true"`
+	ChatID             string `required:"true"`
+	RestartWarpCommand string `required:"true"`
 }{}
 
 func check() bool {
@@ -89,7 +90,7 @@ func main() {
 		if check() {
 			time.Sleep(30 * time.Minute)
 		} else {
-			exec.Command("./warp.sh rewg").Start()
+			exec.Command(config.RestartWarpCommand).Start()
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
