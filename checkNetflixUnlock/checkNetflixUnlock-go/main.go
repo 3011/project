@@ -99,7 +99,8 @@ func main() {
 			log.Println("1")
 			cmd.Run()
 
-			log.Println("here")
+			for getIP() == "Error" {
+			}
 
 			sendMsg("Netflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 			log.Println("end")
