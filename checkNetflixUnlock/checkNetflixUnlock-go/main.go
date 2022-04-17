@@ -92,7 +92,9 @@ func main() {
 		if check() {
 			time.Sleep(30 * time.Minute)
 		} else {
-			exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...).Start()
+			cmd := exec.Command(config.RestartWarpCommand[0], config.RestartWarpCommand[1:]...)
+			cmd.Start()
+			cmd.Wait()
 			sendMsg("\nNetflix: " + strconv.FormatBool(check()) + "\nNew IP: " + getIP())
 		}
 	}
