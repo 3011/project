@@ -6,14 +6,19 @@ import (
 	"net"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 )
 
-var TimeOut = time.Second * 5
+var (
+	TimeOut    = 3 * time.Second
+	RetryCount = 3
+	wg         sync.WaitGroup
+)
 
 func main() {
-	flagUDP := flag.Bool("udp", false, "Just scan UDP. (default false)")
-	flagTCP := flag.Bool("tcp", false, "Just scan TCP. (default false)")
+	flagUDP := flag.Bool("udp", false, "Scan UDP. (default false)")
+	// flagTCP := flag.Bool("tcp", false, "Just scan TCP. (default false)")
 	// flagAll := flag.Bool("all", true, "Scan TCP and TCP. (default true)")
 	flagPort := flag.String("port", "0,65535", "Port range.")
 	flag.Parse()
@@ -42,46 +47,79 @@ func main() {
 		return
 	}
 
-	if *flagTCP && !(*flagUDP) { // scan tcp
+	// if *flagTCP && !(*flagUDP) { // scan tcp
+	// 	for i := portStart; i <= portStop; i++ {
+	// 		wg.Add(1)
+	// 		go scanTCP(host, strconv.Itoa(i))
+	// 	}
+	// } else if *flagUDP && !(*flagTCP) { //scan udp
+	// 	for i := portStart; i <= portStop; i++ {
+	// 		wg.Add(1)
+	// 		go scanUDP(host, strconv.Itoa(i))
+	// 	}
+	// } else {
+	// 	for i := portStart; i <= portStop; i++ {
+	// 		wg.Add(1)
+	// 		go scanAll(host, strconv.Itoa(i))
+	// 	}
+	// }
+
+	if *flagUDP {
 		for i := portStart; i <= portStop; i++ {
-			go scanTCP(host, strconv.Itoa(i))
-		}
-	} else if *flagUDP && !(*flagTCP) { //scan udp
-		for i := portStart; i <= portStop; i++ {
-			go scanUDP(host, strconv.Itoa(i))
+			wg.Add(1)
+			go scanAll(host, strconv.Itoa(i))
 		}
 	} else {
 		for i := portStart; i <= portStop; i++ {
-			go scanAll(host, strconv.Itoa(i))
+			wg.Add(1)
+			go scanTCP(host, strconv.Itoa(i))
 		}
 	}
+
+	wg.Wait()
 }
 
 func scanAll(host string, port string) {
+	defer wg.Done()
 	status := ""
-	_, err := net.DialTimeout("tcp", host+":"+port, TimeOut)
-	if err == nil {
-		status += "TCP "
+	for i := 0; i < RetryCount; i++ {
+		_, err := net.DialTimeout("tcp", host+":"+port, TimeOut)
+		if err == nil {
+			status += "TCP "
+			break
+		}
 	}
-	_, err = net.DialTimeout("udp", host+":"+port, TimeOut)
-	if err == nil {
-		status += "UDP"
+
+	for i := 0; i < RetryCount; i++ {
+		_, err := net.DialTimeout("udp", host+":"+port, TimeOut)
+		if err == nil {
+			status += "UDP"
+			break
+		}
 	}
 	if status != "" {
-		fmt.Println(host, port, status)
+		fmt.Printf("%s %5s %s\n", host, port, status)
 	}
 }
 
 func scanTCP(host string, port string) {
-	_, err := net.DialTimeout("tcp", host+":"+port, TimeOut)
-	if err == nil {
-		fmt.Println(host, port, "TCP")
+	defer wg.Done()
+	for i := 0; i < RetryCount; i++ {
+		_, err := net.DialTimeout("tcp", host+":"+port, TimeOut)
+		if err == nil {
+			fmt.Printf("%s %5s %s\n", host, port, "TCP")
+			break
+		}
 	}
 }
 
-func scanUDP(host string, port string) {
-	_, err := net.DialTimeout("udp", host+":"+port, TimeOut)
-	if err == nil {
-		fmt.Println(host, port, "UDP")
-	}
-}
+// func scanUDP(host string, port string) {
+// 	defer wg.Done()
+// 	for i := 0; i < RetryCount; i++ {
+// 		_, err := net.DialTimeout("udp", host+":"+port, TimeOut)
+// 		if err == nil {
+// 			fmt.Printf("%s %5s %s\n", host, port, "UDP")
+// 			break
+// 		}
+// 	}
+// }
