@@ -5,5 +5,5 @@ config.yml
 
 ```yml
 dbpath: "/etc/x-ui/x-ui.db"
-port: [80, 443, 12345]
+portlist: [80, 443, 12345]
 ```
