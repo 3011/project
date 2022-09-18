@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/3011/project/x-uiResetTraffic/config"
-	"github.com/3011/project/x-uiResetTraffic/model"
+	"github.com/3011/project/X-UIResetTraffic/config"
+	"github.com/3011/project/X-UIResetTraffic/model"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
