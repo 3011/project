@@ -1,0 +1,1387 @@
+{
+    "ACC": {
+        "city": "Accra",
+        "region": "Ghana",
+        "continent": "Africa"
+    },
+    "ALG": {
+        "city": "Algiers",
+        "region": "Algeria",
+        "continent": "Africa"
+    },
+    "TNR": {
+        "city": "Antananarivo",
+        "region": "Madagascar",
+        "continent": "Africa"
+    },
+    "CPT": {
+        "city": "Cape Town",
+        "region": "South Africa",
+        "continent": "Africa"
+    },
+    "CMN": {
+        "city": "Casablanca",
+        "region": "Morocco",
+        "continent": "Africa"
+    },
+    "DKR": {
+        "city": "Dakar",
+        "region": "Senegal",
+        "continent": "Africa"
+    },
+    "DAR": {
+        "city": "Dar Es Salaam",
+        "region": "Tanzania",
+        "continent": "Africa"
+    },
+    "JIB": {
+        "city": "Djibouti City",
+        "region": "Djibouti",
+        "continent": "Africa"
+    },
+    "DUR": {
+        "city": "Durban",
+        "region": "South Africa",
+        "continent": "Africa"
+    },
+    "GBE": {
+        "city": "Gaborone",
+        "region": "Botswana",
+        "continent": "Africa"
+    },
+    "HRE": {
+        "city": "Harare",
+        "region": "Zimbabwe",
+        "continent": "Africa"
+    },
+    "JNB": {
+        "city": "Johannesburg",
+        "region": "South Africa",
+        "continent": "Africa"
+    },
+    "KGL": {
+        "city": "Kigali",
+        "region": "Rwanda",
+        "continent": "Africa"
+    },
+    "LOS": {
+        "city": "Lagos",
+        "region": "Nigeria",
+        "continent": "Africa"
+    },
+    "LAD": {
+        "city": "Luanda",
+        "region": "Angola",
+        "continent": "Africa"
+    },
+    "MPM": {
+        "city": "Maputo",
+        "region": "Mozambique",
+        "continent": "Africa"
+    },
+    "MBA": {
+        "city": "Mombasa",
+        "region": "Kenya",
+        "continent": "Africa"
+    },
+    "ROB": {
+        "city": "Monrovia",
+        "region": "Liberia",
+        "continent": "Africa"
+    },
+    "NBO": {
+        "city": "Nairobi",
+        "region": "Kenya",
+        "continent": "Africa"
+    },
+    "OUA": {
+        "city": "Ouagadougou",
+        "region": "Burkina Faso",
+        "continent": "Africa"
+    },
+    "MRU": {
+        "city": "Port Louis",
+        "region": "Mauritius",
+        "continent": "Africa"
+    },
+    "RUN": {
+        "city": "Réunion",
+        "region": "France",
+        "continent": "Africa"
+    },
+    "TUN": {
+        "city": "Tunis",
+        "region": "Tunisia",
+        "continent": "Africa"
+    },
+    "AMD": {
+        "city": "Ahmedabad",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "ALA": {
+        "city": "Almaty",
+        "region": "Kazakhstan",
+        "continent": "Asia"
+    },
+    "AQG": {
+        "city": "Anqing",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "BLR": {
+        "city": "Bangalore",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "BKK": {
+        "city": "Bangkok",
+        "region": "Thailand",
+        "continent": "Asia"
+    },
+    "BWN": {
+        "city": "Bandar Seri Begawan",
+        "region": "Brunei",
+        "continent": "Asia"
+    },
+    "XIY": {
+        "city": "Baoji",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "BBI": {
+        "city": "Bhubaneswar",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "CEB": {
+        "city": "Cebu",
+        "region": "Philippines",
+        "continent": "Asia"
+    },
+    "IXC": {
+        "city": "Chandigarh",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "CGD": {
+        "city": "Changde",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "MAA": {
+        "city": "Chennai",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "CNX": {
+        "city": "Chiang Mai",
+        "region": "Thailand",
+        "continent": "Asia"
+    },
+    "CGP": {
+        "city": "Chittagong",
+        "region": "Bangladesh",
+        "continent": "Asia"
+    },
+    "CMB": {
+        "city": "Colombo",
+        "region": "Sri Lanka",
+        "continent": "Asia"
+    },
+    "DLC": {
+        "city": "Dalian",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "DAC": {
+        "city": "Dhaka",
+        "region": "Bangladesh",
+        "continent": "Asia"
+    },
+    "FUO": {
+        "city": "Foshan",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "FOC": {
+        "city": "Fuzhou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "CAN": {
+        "city": "Guangzhou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "HAK": {
+        "city": "Haikou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "HAN": {
+        "city": "Hanoi",
+        "region": "Vietnam",
+        "continent": "Asia"
+    },
+    "SJW": {
+        "city": "Hengshui",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "SGN": {
+        "city": "Ho Chi Minh City",
+        "region": "Vietnam",
+        "continent": "Asia"
+    },
+    "HKG": {
+        "city": "Hong Kong",
+        "region": "Hong Kong",
+        "continent": "Asia"
+    },
+    "HYD": {
+        "city": "Hyderabad",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "ISB": {
+        "city": "Islamabad",
+        "region": "Pakistan",
+        "continent": "Asia"
+    },
+    "CGK": {
+        "city": "Jakarta",
+        "region": "Indonesia",
+        "continent": "Asia"
+    },
+    "JSR": {
+        "city": "Jashore",
+        "region": "Bangladesh",
+        "continent": "Asia"
+    },
+    "TNA": {
+        "city": "Jinan",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "HGH": {
+        "city": "Jinhua",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "JHB": {
+        "city": "Johor Bahru",
+        "region": "Malaysia",
+        "continent": "Asia"
+    },
+    "KNU": {
+        "city": "Kanpur",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "KHH": {
+        "city": "Kaohsiung City",
+        "region": "Taiwan",
+        "continent": "Asia"
+    },
+    "KHI": {
+        "city": "Karachi",
+        "region": "Pakistan",
+        "continent": "Asia"
+    },
+    "KTM": {
+        "city": "Kathmandu",
+        "region": "Nepal",
+        "continent": "Asia"
+    },
+    "KHV": {
+        "city": "Khabarovsk",
+        "region": "Russia",
+        "continent": "Asia"
+    },
+    "CCU": {
+        "city": "Kolkata",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "KJA": {
+        "city": "Krasnoyarsk",
+        "region": "Russia",
+        "continent": "Asia"
+    },
+    "KUL": {
+        "city": "Kuala Lumpur",
+        "region": "Malaysia",
+        "continent": "Asia"
+    },
+    "LHE": {
+        "city": "Lahore",
+        "region": "Pakistan",
+        "continent": "Asia"
+    },
+    "PKX": {
+        "city": "Langfang",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "LHW": {
+        "city": "Lanzhou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "LYA": {
+        "city": "Luoyang",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "MFM": {
+        "city": "Macau",
+        "region": "Macau",
+        "continent": "Asia"
+    },
+    "MLE": {
+        "city": "Malé",
+        "region": "Maldives",
+        "continent": "Asia"
+    },
+    "MDL": {
+        "city": "Mandalay",
+        "region": "Myanmar",
+        "continent": "Asia"
+    },
+    "MNL": {
+        "city": "Manila",
+        "region": "Philippines",
+        "continent": "Asia"
+    },
+    "BOM": {
+        "city": "Mumbai",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "NAG": {
+        "city": "Nagpur",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "OKA": {
+        "city": "Naha",
+        "region": "Japan",
+        "continent": "Asia"
+    },
+    "DEL": {
+        "city": "New Delhi",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "KIX": {
+        "city": "Osaka",
+        "region": "Japan",
+        "continent": "Asia"
+    },
+    "PAT": {
+        "city": "Patna",
+        "region": "India",
+        "continent": "Asia"
+    },
+    "PNH": {
+        "city": "Phnom Penh",
+        "region": "Cambodia",
+        "continent": "Asia"
+    },
+    "TAO": {
+        "city": "Qingdao",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "ICN": {
+        "city": "Seoul",
+        "region": "South Korea",
+        "continent": "Asia"
+    },
+    "SHA": {
+        "city": "Shanghai",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "SIN": {
+        "city": "Singapore",
+        "region": "Singapore",
+        "continent": "Asia"
+    },
+    "URT": {
+        "city": "Surat Thani",
+        "region": "Thailand",
+        "continent": "Asia"
+    },
+    "TAS": {
+        "city": "Tashkent",
+        "region": "Uzbekistan",
+        "continent": "Asia"
+    },
+    "PBH": {
+        "city": "Thimphu",
+        "region": "Bhutan",
+        "continent": "Asia"
+    },
+    "TSN": {
+        "city": "Tianjin",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "NRT": {
+        "city": "Tokyo",
+        "region": "Japan",
+        "continent": "Asia"
+    },
+    "ULN": {
+        "city": "Ulaanbaatar",
+        "region": "Mongolia",
+        "continent": "Asia"
+    },
+    "VTE": {
+        "city": "Vientiane",
+        "region": "Laos",
+        "continent": "Asia"
+    },
+    "WUX": {
+        "city": "Wuxi",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "XNN": {
+        "city": "Xining",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "KHN": {
+        "city": "Xinyu",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "RGN": {
+        "city": "Yangon",
+        "region": "Myanmar",
+        "continent": "Asia"
+    },
+    "EVN": {
+        "city": "Yerevan",
+        "region": "Armenia",
+        "continent": "Asia"
+    },
+    "JOG": {
+        "city": "Yogyakarta",
+        "region": "Indonesia",
+        "continent": "Asia"
+    },
+    "CGO": {
+        "city": "Zhengzhou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "CGQ": {
+        "city": "Changchun",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "NNG": {
+        "city": "Nanning",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "WUH": {
+        "city": "Xiaogan",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "YTY": {
+        "city": "Yangzhou",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "ZGN": {
+        "city": "Zhongshan",
+        "region": "China",
+        "continent": "Asia"
+    },
+    "CGY": {
+        "city": "Cagayan de Oro",
+        "region": "Philippines",
+        "continent": "Asia"
+    },
+    "AMS": {
+        "city": "Amsterdam",
+        "region": "Netherlands",
+        "continent": "Europe"
+    },
+    "ATH": {
+        "city": "Athens",
+        "region": "Greece",
+        "continent": "Europe"
+    },
+    "BCN": {
+        "city": "Barcelona",
+        "region": "Spain",
+        "continent": "Europe"
+    },
+    "BEG": {
+        "city": "Belgrade",
+        "region": "Serbia",
+        "continent": "Europe"
+    },
+    "TXL": {
+        "city": "Berlin",
+        "region": "Germany",
+        "continent": "Europe"
+    },
+    "BTS": {
+        "city": "Bratislava",
+        "region": "Slovakia",
+        "continent": "Europe"
+    },
+    "BRU": {
+        "city": "Brussels",
+        "region": "Belgium",
+        "continent": "Europe"
+    },
+    "OTP": {
+        "city": "Bucharest",
+        "region": "Romania",
+        "continent": "Europe"
+    },
+    "BUD": {
+        "city": "Budapest",
+        "region": "Hungary",
+        "continent": "Europe"
+    },
+    "KIV": {
+        "city": "Chișinău",
+        "region": "Moldova",
+        "continent": "Europe"
+    },
+    "CPH": {
+        "city": "Copenhagen",
+        "region": "Denmark",
+        "continent": "Europe"
+    },
+    "ORK": {
+        "city": "Cork",
+        "region": "Ireland",
+        "continent": "Europe"
+    },
+    "DUB": {
+        "city": "Dublin",
+        "region": "Ireland",
+        "continent": "Europe"
+    },
+    "DUS": {
+        "city": "Düsseldorf",
+        "region": "Germany",
+        "continent": "Europe"
+    },
+    "EDI": {
+        "city": "Edinburgh",
+        "region": "United Kingdom",
+        "continent": "Europe"
+    },
+    "FRA": {
+        "city": "Frankfurt",
+        "region": "Germany",
+        "continent": "Europe"
+    },
+    "GVA": {
+        "city": "Geneva",
+        "region": "Switzerland",
+        "continent": "Europe"
+    },
+    "GOT": {
+        "city": "Gothenburg",
+        "region": "Sweden",
+        "continent": "Europe"
+    },
+    "HAM": {
+        "city": "Hamburg",
+        "region": "Germany",
+        "continent": "Europe"
+    },
+    "HEL": {
+        "city": "Helsinki",
+        "region": "Finland",
+        "continent": "Europe"
+    },
+    "IST": {
+        "city": "Istanbul",
+        "region": "Turkey",
+        "continent": "Europe"
+    },
+    "KBP": {
+        "city": "Kyiv",
+        "region": "Ukraine",
+        "continent": "Europe"
+    },
+    "LIS": {
+        "city": "Lisbon",
+        "region": "Portugal",
+        "continent": "Europe"
+    },
+    "LHR": {
+        "city": "London",
+        "region": "United Kingdom",
+        "continent": "Europe"
+    },
+    "LUX": {
+        "city": "Luxembourg City",
+        "region": "Luxembourg",
+        "continent": "Europe"
+    },
+    "MAD": {
+        "city": "Madrid",
+        "region": "Spain",
+        "continent": "Europe"
+    },
+    "MAN": {
+        "city": "Manchester",
+        "region": "United Kingdom",
+        "continent": "Europe"
+    },
+    "MRS": {
+        "city": "Marseille",
+        "region": "France",
+        "continent": "Europe"
+    },
+    "MXP": {
+        "city": "Milan",
+        "region": "Italy",
+        "continent": "Europe"
+    },
+    "MSQ": {
+        "city": "Minsk",
+        "region": "Belarus",
+        "continent": "Europe"
+    },
+    "DME": {
+        "city": "Moscow",
+        "region": "Russia",
+        "continent": "Europe"
+    },
+    "MUC": {
+        "city": "Munich",
+        "region": "Germany",
+        "continent": "Europe"
+    },
+    "LCA": {
+        "city": "Nicosia",
+        "region": "Cyprus",
+        "continent": "Europe"
+    },
+    "OSL": {
+        "city": "Oslo",
+        "region": "Norway",
+        "continent": "Europe"
+    },
+    "PMO": {
+        "city": "Palermo",
+        "region": "Italy",
+        "continent": "Europe"
+    },
+    "CDG": {
+        "city": "Paris",
+        "region": "France",
+        "continent": "Europe"
+    },
+    "PRG": {
+        "city": "Prague",
+        "region": "Czech Republic",
+        "continent": "Europe"
+    },
+    "KEF": {
+        "city": "Reykjavík",
+        "region": "Iceland",
+        "continent": "Europe"
+    },
+    "RIX": {
+        "city": "Riga",
+        "region": "Latvia",
+        "continent": "Europe"
+    },
+    "FCO": {
+        "city": "Rome",
+        "region": "Italy",
+        "continent": "Europe"
+    },
+    "LED": {
+        "city": "Saint Petersburg",
+        "region": "Russia",
+        "continent": "Europe"
+    },
+    "SOF": {
+        "city": "Sofia",
+        "region": "Bulgaria",
+        "continent": "Europe"
+    },
+    "ARN": {
+        "city": "Stockholm",
+        "region": "Sweden",
+        "continent": "Europe"
+    },
+    "TLL": {
+        "city": "Tallinn",
+        "region": "Estonia",
+        "continent": "Europe"
+    },
+    "TBS": {
+        "city": "Tbilisi",
+        "region": "Georgia",
+        "continent": "Europe"
+    },
+    "SKG": {
+        "city": "Thessaloniki",
+        "region": "Greece",
+        "continent": "Europe"
+    },
+    "TIA": {
+        "city": "Tirana",
+        "region": "Albania",
+        "continent": "Europe"
+    },
+    "VIE": {
+        "city": "Vienna",
+        "region": "Austria",
+        "continent": "Europe"
+    },
+    "VNO": {
+        "city": "Vilnius",
+        "region": "Lithuania",
+        "continent": "Europe"
+    },
+    "WAW": {
+        "city": "Warsaw",
+        "region": "Poland",
+        "continent": "Europe"
+    },
+    "SVX": {
+        "city": "Yekaterinburg",
+        "region": "Russia",
+        "continent": "Europe"
+    },
+    "ZAG": {
+        "city": "Zagreb",
+        "region": "Croatia",
+        "continent": "Europe"
+    },
+    "ZRH": {
+        "city": "Zürich",
+        "region": "Switzerland",
+        "continent": "Europe"
+    },
+    "KLD": {
+        "city": "Tver",
+        "region": "Russian Federation",
+        "continent": "Europe"
+    },
+    "QWJ": {
+        "city": "Americana",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "ARI": {
+        "city": "Arica",
+        "region": "Chile",
+        "continent": "Latin America & the Caribbean"
+    },
+    "ASU": {
+        "city": "Asunción",
+        "region": "Paraguay",
+        "continent": "Latin America & the Caribbean"
+    },
+    "BEL": {
+        "city": "Belém",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CNF": {
+        "city": "Belo Horizonte",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "BNU": {
+        "city": "Blumenau",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "BOG": {
+        "city": "Bogotá",
+        "region": "Colombia",
+        "continent": "Latin America & the Caribbean"
+    },
+    "BSB": {
+        "city": "Brasilia",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "EZE": {
+        "city": "Buenos Aires",
+        "region": "Argentina",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CFC": {
+        "city": "Caçador",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "VCP": {
+        "city": "Campinas",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CCP": {
+        "city": "Concepción",
+        "region": "Chile",
+        "continent": "Latin America & the Caribbean"
+    },
+    "COR": {
+        "city": "Córdoba",
+        "region": "Argentina",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CGB": {
+        "city": "Cuiabá",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CWB": {
+        "city": "Curitiba",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "FLN": {
+        "city": "Florianopolis",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "FOR": {
+        "city": "Fortaleza",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GEO": {
+        "city": "Georgetown",
+        "region": "Guyana",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GYN": {
+        "city": "Goiânia",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GUA": {
+        "city": "Guatemala City",
+        "region": "Guatemala",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GYE": {
+        "city": "Guayaquil",
+        "region": "Ecuador",
+        "continent": "Latin America & the Caribbean"
+    },
+    "ITJ": {
+        "city": "Itajaí",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "JOI": {
+        "city": "Joinville",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "JDO": {
+        "city": "Juazeiro do Norte",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "LIM": {
+        "city": "Lima",
+        "region": "Peru",
+        "continent": "Latin America & the Caribbean"
+    },
+    "MAO": {
+        "city": "Manaus",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "MDE": {
+        "city": "Medellín",
+        "region": "Colombia",
+        "continent": "Latin America & the Caribbean"
+    },
+    "NQN": {
+        "city": "Neuquén",
+        "region": "Argentina",
+        "continent": "Latin America & the Caribbean"
+    },
+    "PTY": {
+        "city": "Panama City",
+        "region": "Panama",
+        "continent": "Latin America & the Caribbean"
+    },
+    "PBM": {
+        "city": "Paramaribo",
+        "region": "Suriname",
+        "continent": "Latin America & the Caribbean"
+    },
+    "POA": {
+        "city": "Porto Alegre",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "PAP": {
+        "city": "Port-Au-Prince",
+        "region": "Haiti",
+        "continent": "Latin America & the Caribbean"
+    },
+    "UIO": {
+        "city": "Quito",
+        "region": "Ecuador",
+        "continent": "Latin America & the Caribbean"
+    },
+    "RAO": {
+        "city": "Ribeirao Preto",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GIG": {
+        "city": "Rio de Janeiro",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SSA": {
+        "city": "Salvador",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SJO": {
+        "city": "San José",
+        "region": "Costa Rica",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SCL": {
+        "city": "Santiago",
+        "region": "Chile",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SJP": {
+        "city": "São José do Rio Preto",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GRU": {
+        "city": "São Paulo",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SOD": {
+        "city": "Sorocaba",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "GND": {
+        "city": "St. George's",
+        "region": "Grenada",
+        "continent": "Latin America & the Caribbean"
+    },
+    "TGU": {
+        "city": "Tegucigalpa",
+        "region": "Honduras",
+        "continent": "Latin America & the Caribbean"
+    },
+    "UDI": {
+        "city": "Uberlândia",
+        "region": "Brazil",
+        "continent": "Latin America & the Caribbean"
+    },
+    "CUR": {
+        "city": "Willemstad",
+        "region": "Curaçao",
+        "continent": "Latin America & the Caribbean"
+    },
+    "SDQ": {
+        "city": "Santo Domingo",
+        "region": "Dominican Republic",
+        "continent": "Latin America & the Caribbean"
+    },
+    "AMM": {
+        "city": "Amman",
+        "region": "Jordan",
+        "continent": "Middle East"
+    },
+    "LLK": {
+        "city": "Astara",
+        "region": "Azerbaijan",
+        "continent": "Middle East"
+    },
+    "BGW": {
+        "city": "Baghdad",
+        "region": "Iraq",
+        "continent": "Middle East"
+    },
+    "GYD": {
+        "city": "Baku",
+        "region": "Azerbaijan",
+        "continent": "Middle East"
+    },
+    "BEY": {
+        "city": "Beirut",
+        "region": "Lebanon",
+        "continent": "Middle East"
+    },
+    "DMM": {
+        "city": "Dammam",
+        "region": "Saudi Arabia",
+        "continent": "Middle East"
+    },
+    "DOH": {
+        "city": "Doha",
+        "region": "Qatar",
+        "continent": "Middle East"
+    },
+    "DXB": {
+        "city": "Dubai",
+        "region": "United Arab Emirates",
+        "continent": "Middle East"
+    },
+    "EBL": {
+        "city": "Erbil",
+        "region": "Iraq",
+        "continent": "Middle East"
+    },
+    "HFA": {
+        "city": "Haifa",
+        "region": "Israel",
+        "continent": "Middle East"
+    },
+    "JED": {
+        "city": "Jeddah",
+        "region": "Saudi Arabia",
+        "continent": "Middle East"
+    },
+    "KWI": {
+        "city": "Kuwait City",
+        "region": "Kuwait",
+        "continent": "Middle East"
+    },
+    "BAH": {
+        "city": "Manama",
+        "region": "Bahrain",
+        "continent": "Middle East"
+    },
+    "MCT": {
+        "city": "Muscat",
+        "region": "Oman",
+        "continent": "Middle East"
+    },
+    "ZDM": {
+        "city": "Ramallah",
+        "region": "Ramallah",
+        "continent": "Middle East"
+    },
+    "RUH": {
+        "city": "Riyadh",
+        "region": "Saudi Arabia",
+        "continent": "Middle East"
+    },
+    "TLV": {
+        "city": "Tel Aviv",
+        "region": "Israel",
+        "continent": "Middle East"
+    },
+    "IAD": {
+        "city": "Ashburn VA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "ATL": {
+        "city": "Atlanta GA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "BOS": {
+        "city": "Boston MA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "BUF": {
+        "city": "Buffalo NY",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "YYC": {
+        "city": "Calgary AB",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "CLT": {
+        "city": "Charlotte NC",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "ORD": {
+        "city": "Chicago IL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "CMH": {
+        "city": "Columbus OH",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "DFW": {
+        "city": "Dallas TX",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "DEN": {
+        "city": "Denver CO",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "DTW": {
+        "city": "Detroit MI",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "HNL": {
+        "city": "Honolulu HI",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "IAH": {
+        "city": "Houston TX",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "IND": {
+        "city": "Indianapolis IN",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "JAX": {
+        "city": "Jacksonville FL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MCI": {
+        "city": "Kansas City MO",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "LAS": {
+        "city": "Las Vegas NV",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "LAX": {
+        "city": "Los Angeles CA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MFE": {
+        "city": "McAllen TX",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MEM": {
+        "city": "Memphis TN",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MEX": {
+        "city": "Mexico City",
+        "region": "Mexico",
+        "continent": "North America"
+    },
+    "MIA": {
+        "city": "Miami FL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MSP": {
+        "city": "Minneapolis MN",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "MGM": {
+        "city": "Montgomery AL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "YUL": {
+        "city": "Montréal QC",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "EWR": {
+        "city": "Newark NJ",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "ORF": {
+        "city": "Norfolk VA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "OMA": {
+        "city": "Omaha NE",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "YOW": {
+        "city": "Ottawa",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "PHL": {
+        "city": "Philadelphia",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "PHX": {
+        "city": "Phoenix AZ",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "PIT": {
+        "city": "Pittsburgh PA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "PDX": {
+        "city": "Portland OR",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "QRO": {
+        "city": "Queretaro MX",
+        "region": "Mexico",
+        "continent": "North America"
+    },
+    "RIC": {
+        "city": "Richmond VA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "SMF": {
+        "city": "Sacramento CA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "SLC": {
+        "city": "Salt Lake City UT",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "SAN": {
+        "city": "San Diego CA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "SJC": {
+        "city": "San Jose CA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "YXE": {
+        "city": "Saskatoon SK",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "SEA": {
+        "city": "Seattle WA",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "STL": {
+        "city": "St. Louis MO",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "TLH": {
+        "city": "Tallahassee FL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "TPA": {
+        "city": "Tampa FL",
+        "region": "United States",
+        "continent": "North America"
+    },
+    "YYZ": {
+        "city": "Toronto ON",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "YVR": {
+        "city": "Vancouver BC",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "YWG": {
+        "city": "Winnipeg MB",
+        "region": "Canada",
+        "continent": "North America"
+    },
+    "ADL": {
+        "city": "Adelaide SA",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "AKL": {
+        "city": "Auckland",
+        "region": "New Zealand",
+        "continent": "North America"
+    },
+    "BNE": {
+        "city": "Brisbane QLD",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "CBR": {
+        "city": "Canberra ACT",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "CHC": {
+        "city": "Christchurch",
+        "region": "New Zealand",
+        "continent": "North America"
+    },
+    "GUM": {
+        "city": "Hagatna",
+        "region": "Guam",
+        "continent": "North America"
+    },
+    "HBA": {
+        "city": "Hobart",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "MEL": {
+        "city": "Melbourne VIC",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "NOU": {
+        "city": "Noumea",
+        "region": "New Caledonia",
+        "continent": "North America"
+    },
+    "PER": {
+        "city": "Perth WA",
+        "region": "Australia",
+        "continent": "North America"
+    },
+    "SYD": {
+        "city": "Sydney NSW",
+        "region": "Australia",
+        "continent": "North America"
+    }
+}
